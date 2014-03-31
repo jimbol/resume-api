@@ -1,0 +1,169 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"link",
+				"linkTo"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jameshall/.ssh/keys/qualified.net.pem",
+		"/Users/jameshall/.bash_ps1",
+		"/Users/jameshall/.bashrc",
+		"/Users/jameshall/jameshall.sublime-project",
+		"/Users/jameshall/Documents/Development/Examples/Ember/2simple_localstorage/js/script.js",
+		"/Users/jameshall/Documents/Development/Examples/Ember/1simple_static/js/script.js",
+		"/Users/jameshall/Documents/Development/Examples/Ember/1simple_static/index.html",
+		"/Users/jameshall/Downloads/starter-kit-1.0.0-rc.6/js/app.js",
+		"/Users/jameshall/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Instances",
+			"conrad",
+			"jim",
+			"NAME",
+			"{\n	id: 1,\n	title: 'Post One',\n	author: 'Jim Hall',\n	intro: 'This is the intro for the post',\n	extended: 'Here is the longer part of the post.  This is where all the meat goes.'\n},\n",
+			" href=\"#\"",
+			"</a>",
+			"<a ",
+			"button",
+			"First",
+			"},\n    	{",
+			"First"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sc",
+				"js/script.js"
+			],
+			[
+				"n",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true
+}
