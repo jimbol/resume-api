@@ -16,7 +16,7 @@ module.exports.adapters = {
 
   // If you leave the adapter config unspecified 
   // in a model definition, 'default' will be used.
-  'default': 'mongo',
+  'default': 'mongoProd',
 
   // Persistent adapter for DEVELOPMENT ONLY
   // (data is preserved when the server shuts down)
@@ -24,6 +24,15 @@ module.exports.adapters = {
     module: 'sails-disk'
   },
 
+
+  mongoProd: {
+    module: 'sails-mongo',
+    host: 'ds035517.mongolab.com',
+    port: 35517,
+    user: 'heroku_app23609610',
+    password: 'Password1',
+    database: 'heroku_app23609610'
+  },
 
   mongo: {
     module: 'sails-mongo',
