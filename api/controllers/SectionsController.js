@@ -1,5 +1,5 @@
 /**
- * SkillsController
+ * SectionsController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -16,20 +16,20 @@
  */
 
 module.exports = {
-    
+	
   
-	findSkills: function (req,res) {
+	findSections: function (req,res) {
 		var ids = req.param('ids');
 
 		if(ids){
-			Skills.find().done(function(err, skills) {
+			Sections.find().done(function(err, sections) {
 
 				var results = [],
 					item;
 
 				// Check results to see if they match
-				for(var i = 0; i < skills.length; i++){
-					item = skills[i];
+				for(var i = 0; i < sections.length; i++){
+					item = sections[i];
 
 					for(var j = 0; j < ids.length; j++){
 
@@ -43,16 +43,16 @@ module.exports = {
 			});
 		} else {
 
-			Skills.find().done(function(err, skills) {
+			Sections.find().done(function(err, sections) {
 
-				res.json(skills);
+				res.json(sections);
 			});
 		}
 	},
 
 	/**
 	* Overrides for the settings in `config/controllers.js`
-	* (specific to SkillsController)
+	* (specific to SectionsController)
 	*/
 	_config: {}
 

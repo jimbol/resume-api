@@ -14,25 +14,37 @@ module.exports.policies = {
 
   // Default policy for all controllers and actions
   // (`true` allows public access) 
-  '*': 		true
+	'*': 		false,
 
-  /*
-	// Here's an example of adding some policies to a controller
-	RabbitController: {
-
-		// Apply the `false` policy as the default for all of RabbitController's actions
-		// (`false` prevents all access, which ensures that nothing bad happens to our rabbits)
+	ProfilesController: {
 		'*': false,
+		find: true
+	},
+	
+	SectionsController: {
+		'*': false,
+		find: true,
+		findSections: true
+	},
+	
+	SubSectionsController: {
+		'*': false,
+		find: true,
+		findSubSections: true
+	},
 
-		// For the action `nurture`, apply the 'isRabbitMother' policy 
-		// (this overrides `false` above)
-		nurture	: 'isRabbitMother',
-
-		// Apply the `isNiceToAnimals` AND `hasRabbitFood` policies
-		// before letting any users feed our rabbits
-		feed : ['isNiceToAnimals', 'hasRabbitFood']
+	JobsController: {
+		'*': false,
+		find: true,
+		findJobs: true
+	},
+	
+	SkillsController: {
+		'*': false,
+		find: true,
+		findSkills: true
 	}
-	*/
+	
 };
 
 

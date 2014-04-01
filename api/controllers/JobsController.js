@@ -1,5 +1,5 @@
 /**
- * SkillController
+ * JobsController
  *
  * @module      :: Controller
  * @description	:: A set of functions called `actions`.
@@ -19,12 +19,42 @@ module.exports = {
     
   
 
+	findJobs: function (req,res) {
+		var ids = req.param('ids');
 
-  /**
-   * Overrides for the settings in `config/controllers.js`
-   * (specific to SkillController)
-   */
-  _config: {}
+		if(ids){
+			Jobs.find().done(function(err, sections) {
+
+				var results = [],
+					item;
+
+				// Check results to see if they match
+				for(var i = 0; i < sections.length; i++){
+					item = sections[i];
+
+					for(var j = 0; j < ids.length; j++){
+
+						if(item.id === ids[j]){
+							results.push(item);
+						}
+					}
+				}
+
+				res.json(results);
+			});
+		} else {
+
+			Jobs.find().done(function(err, sections) {
+
+				res.json(sections);
+			});
+		}
+	},
+	/**
+	* Overrides for the settings in `config/controllers.js`
+	* (specific to JobsController)
+	*/
+	_config: {}
 
   
 };
